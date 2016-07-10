@@ -1,0 +1,66 @@
+/* Base styles */
+body * {
+    /*font-family: sans-serif !important;*/
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 300;
+}
+h1 {
+    line-height: 48px;
+    font-size: 48px;
+}
+.bgc-outer-space {
+    background-color: #253772;
+}
+
+/* Utilities */
+.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Images */
+
+#hero-bloc {
+    background-image: url('../img/bg-hero.jpg');
+}
+
+#qualities {
+    background-image: url('../img/bg-qualities.jpg');
+}
+
+#member-companies {
+    background-image: url('../img/city.jpg');
+}
+
+/* Navbar */
+.navbar a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar li>a {
+    text-transform: uppercase;
+}
+#hero-bloc .sticky {
+    background-color: #fff;
+}
+#hero-bloc .sticky li>a {
+    color: #061441;
+}
+.hero-nav .navbar-brand img {
+    -webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);
+}
+.hero-nav.sticky .navbar-brand img {
+    -webkit-filter: none;
+}
+
+/* About block */
+
+#about h3 {
+    line-height: 1.3;
+}
+
+/* Team block */
+
+#team img {
+    max-width: 250px;
+}
