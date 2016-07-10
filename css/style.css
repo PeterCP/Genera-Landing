@@ -18,6 +18,9 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+.img-white {
+    -webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);
+}
 
 /* Images */
 
@@ -34,6 +37,7 @@ h1 {
 }
 
 /* Navbar */
+
 .navbar a {
     color: rgba(255, 255, 255, 0.8);
 }
@@ -46,8 +50,11 @@ h1 {
 #hero-bloc .sticky li>a {
     color: #061441;
 }
+#hero-bloc li>a:hover {
+    font-weight: bold;
+}
 .hero-nav .navbar-brand img {
-    -webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);
+    /*-webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);*/
 }
 .hero-nav.sticky .navbar-brand img {
     -webkit-filter: none;
