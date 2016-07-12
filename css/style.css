@@ -63,6 +63,7 @@ h1 {
     border-color: #061441;
 }
 .hero-nav .navbar-brand img {
+    max-height: 40px;
     -webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);
 }
 .hero-nav.sticky .navbar-brand img {
