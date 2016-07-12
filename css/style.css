@@ -108,12 +108,31 @@ h1 {
     }
 }
 
-
-
 /* Contact block */
 
 #contact .btn {
     background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Footer block */
+
+#footer img {
+    max-width: 250px;
+}
+#img-container div {
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    #img-container div {
+        margin-top: 0px;
+    }
+    #footer #col-tecnia {
+        margin-bottom: 0px;
+    }
+    #col-info > h3,
+    #col-info > h4 {
+        text-align: center;
+    }
 }
 
 /* Vertical divider */
