@@ -22,11 +22,17 @@
         <script src="./js/blocs.js"></script>
         <script src="./js/jqBootstrapValidation.js"></script>
         <script src="./js/formHandler.js"></script>
+        <script src="./js/jquery.smooth-scroll.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#navbar-items a').smoothScroll();
+            });
+        </script>
 
         <title>Genera - Anahuac</title>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#navbar-items" style="position: relative;">
         <!-- Main container -->
         <div class="page-container">
 
@@ -38,32 +44,38 @@
                             <a class="navbar-brand" href="index.html" style="padding-top: 5px;">
                                 <img src="img/logo_genera.png" alt="logo" style="max-height: 50px;"/>
                             </a>
-                            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target="#navbar-items">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse navbar-1">
+                        <div class="collapse navbar-collapse" id="navbar-items">
                             <ul class="site-navigation nav navbar-nav pull-right">
                                 <li class="active">
-                                    <a onclick="scrollToTarget('1')">Inicio</a>
+                                    <!-- <a href="#hero-bloc" onclick="scrollToTarget('1')">Inicio</a> -->
+                                    <a href="#hero-bloc">Inicio</a>
                                 </li>
                                 <li>
-                                    <a onclick="scrollToTarget('#about')">Nosotros</a>
+                                    <!-- <a href="#about" onclick="scrollToTarget('#about')">Nosotros</a> -->
+                                    <a href="#about">Nosotros</a>
                                 </li>
                                 <li>
-                                    <a onclick="scrollToTarget('#qualities')">Cualidades</a>
+                                    <!-- <a href="#qualities" onclick="scrollToTarget('#qualities')">Cualidades</a> -->
+                                    <a href="#qualities">Cualidades</a>
                                 </li>
                                 <li>
-                                    <a onclick="scrollToTarget('#team')">Equipo</a>
+                                    <!-- <a href="#team" onclick="scrollToTarget('#team')">Equipo</a> -->
+                                    <a href="#team">Equipo</a>
                                 </li>
                                 <li>
-                                    <a onclick="scrollToTarget('#member-companies')">Empresas Genera</a>
+                                    <!-- <a href="#member-companies" onclick="scrollToTarget('#member-companies')">Empresas Genera</a> -->
+                                    <a href="#member-companies">Empresas Genera</a>
                                 </li>
                                 <li>
-                                    <a onclick="scrollToTarget('#contact')">Contacto</a>
+                                    <!-- <a href="#contact" onclick="scrollToTarget('#contact')">Contacto</a> -->
+                                    <a href="#contact">Contacto</a>
                                 </li>
                             </ul>
                         </div>
