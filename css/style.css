@@ -1,7 +1,5 @@
 /* Base styles */
-body * {
-    /*font-family: sans-serif !important;*/
-}
+
 h1, h2, h3, h4, h5, h6, p {
     font-weight: 300;
 }
@@ -14,6 +12,7 @@ h1 {
 }
 
 /* Utilities */
+
 .align-center {
     margin-left: auto;
     margin-right: auto;
@@ -35,9 +34,14 @@ h1 {
 }
 
 /* Navbar */
-
-.navbar a {
+#hero-bloc .hero-nav {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#hero-bloc .hero-nav .nav a {
     color: rgba(255, 255, 255, 0.8);
+}
+#hero-bloc .sticky .nav a {
+    color: #061441;
 }
 .navbar li>a {
     text-transform: uppercase;
@@ -48,7 +52,8 @@ h1 {
 #hero-bloc .sticky li>a {
     color: #061441;
 }
-.hero-nav li>a:hover {
+.hero-nav li>a:hover,
+.hero-nav .active>a {
     font-weight: bold;
 }
 .hero-nav .active {
@@ -62,6 +67,21 @@ h1 {
 }
 .hero-nav.sticky .navbar-brand img {
     -webkit-filter: none;
+}
+
+/* Mobile Navbar */
+
+@media (max-width: 767px) {
+    #hero-bloc .navbar .nav {
+        background: transparent;
+    }
+    .nav li {
+        border: none;
+        background: transparent;
+    }
+    .sticky .navbar-toggle .icon-bar {
+        background: #061441;
+    }
 }
 
 /* About block */
