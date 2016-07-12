@@ -9,7 +9,7 @@ h1 {
     line-height: 48px;
     font-size: 48px;
 }
-.bgc-outer-space {
+.bgc-blue {
     background-color: #253772;
 }
 
@@ -27,13 +27,11 @@ h1 {
 #hero-bloc {
     background-image: url('../img/bg-hero.jpg');
 }
-
 #qualities {
     background-image: url('../img/bg-qualities.jpg');
 }
-
 #member-companies {
-    background-image: url('../img/city.jpg');
+    background-image: url('../img/bg-member-companies.jpg');
 }
 
 /* Navbar */
@@ -50,11 +48,17 @@ h1 {
 #hero-bloc .sticky li>a {
     color: #061441;
 }
-#hero-bloc li>a:hover {
+.hero-nav li>a:hover {
     font-weight: bold;
 }
+.hero-nav .active {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.hero-nav.sticky .active {
+    border-color: #061441;
+}
 .hero-nav .navbar-brand img {
-    /*-webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);*/
+    -webkit-filter: grayscale(1) brightness(0) invert(1) saturate(1);
 }
 .hero-nav.sticky .navbar-brand img {
     -webkit-filter: none;
@@ -70,4 +74,54 @@ h1 {
 
 #team img {
     max-width: 250px;
+}
+#team .media {
+    margin-top: 15px;
+}
+#team .media img {
+    max-width: 80px;
+}
+@media (max-width: 767px) {
+    #team #team-collapse {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+
+/* Contact block */
+
+#contact .btn {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Vertical divider */
+
+.row.vertical-divider {
+    overflow: hidden;
+}
+.row.vertical-divider > div[class^="col-"] {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.row.vertical-divider div[class^="col-"]:first-child {
+    border-left: none;
+}
+.row.vertical-divider div[class^="col-"]:last-child {
+    border-right: none;
+}
+.l-bloc .row.vertical-divider > div[class^="col-"] {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.d-bloc .row.vertical-divider > div[class^="col-"] {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Horizontal divider override */
+.divider-h span {
+    border-width: 2px;
 }
